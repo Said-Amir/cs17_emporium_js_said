@@ -1,0 +1,38 @@
+#services{
+    .containerImg{
+        background-position: center;
+        height: 250px;
+        width: 100%;
+        font-family: 'Poppins', serif;
+        h2{
+            font-size: 40px;
+        }
+        .underlineService{
+            width: 70%;
+            margin: 0 auto;
+            height: 3px;
+            background-color: white;
+        }
+    }
+    .containerImg1{
+        background-image: url("../../public/img/services/service-1.jpg");
+    }
+    .containerImg2{
+        background-image: url("../../public/img/services/service-2.jpg");
+    }
+    .containerImg3{
+        background-image: url("../../public/img/services/slider-3.jpg");
+    }
+}
+
+@media screen and (max-width: 600px){
+    #services{
+        .containerImg{
+            margin-top: 20px;
+            background-position: center;
+            height: 250px;
+            width: 100%;
+            font-family: 'Poppins', serif;
+        }
+    }
+}
