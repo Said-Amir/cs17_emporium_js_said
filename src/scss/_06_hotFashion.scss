@@ -1,0 +1,229 @@
+#hotFashion{
+    .myCarousel{
+        overflow-x: hidden;
+        position: relative;
+        margin: 0 auto;
+        width: 60%;
+        height: 500px;
+        
+        .divIndicators{
+            bottom: 20px;
+            width: 100px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 999;
+            position: absolute;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .indic{
+            height: 15px;
+            width: 15px;
+            border: solid 1px black;
+            border-radius: 50%;
+        }
+        .myIndicator{
+            cursor: pointer;
+        }
+        
+        .myIndicator1{
+            cursor: pointer;
+        }   
+        
+        .myIndicator2{
+            cursor: pointer;
+        }
+        
+        .myIndicator3{
+            cursor: pointer;
+        }
+        .myIndicator4{
+            cursor: pointer;
+            display: none;
+        }
+        .myIndicator5{
+            cursor: pointer;
+            display: none;
+        }
+        .myIndicator6{
+            cursor: pointer;
+            display: none;
+        }
+        .img{
+            left: 3%;
+            top: 20%;
+            font-weight: 700;
+            width: 21%;
+        }
+        .img0{
+            position: absolute;
+            height: 250px;
+            transition: 1s;
+        }
+        
+        .img2{
+            position: absolute;
+            transform: translateX(120%);
+            height: 250px;
+            transition: 1s;
+        }
+        
+        .img3{
+            position: absolute;
+            transform: translateX(240%);
+            height: 250px;
+            transition: 1s;
+        }
+        
+        .img4{
+            position: absolute;
+            transform: translateX(360%);
+            height: 250px;
+            transition: 1s;
+        }
+        
+        .img5{
+            position: absolute;
+            transform: translateX(500%);
+            height: 250px;
+            transition: 1s;
+        }
+        
+        .img6{
+            position: absolute;
+            transform: translateX(620%);
+            height: 250px;
+            transition: 1s;
+        }
+        
+        .img7{
+            position: absolute;
+            transform: translateX(750%);
+            height: 250px;
+            transition: 1s;
+        }
+    }
+}
+
+@media screen and (max-width: 992px){
+    #hotFashion{
+        .myCarousel{
+            overflow-x: hidden;
+            position: relative;
+            margin: 0 auto;
+            width: 100%;
+            height: 500px;
+        }
+    }    
+}
+
+@media screen and (max-width: 600px){
+    #hotFashion{
+        .myCarousel{
+            overflow-x: hidden;
+            position: relative;
+            margin: 0 auto;
+            width: 100%;
+            height: 500px;
+            
+            .divIndicators{
+                bottom: 20px;
+                width: 75%;
+                left: 50%;
+                transform: translateX(-50%);
+                z-index: 999;
+                position: absolute;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .indic{
+                height: 15px;
+                width: 15px;
+                border: solid 1px black;
+                border-radius: 50%;
+            }
+            .myIndicator{
+                cursor: pointer;
+            }
+            
+            .myIndicator1{
+                cursor: pointer;
+            }   
+            
+            .myIndicator2{
+                cursor: pointer;
+            }
+            
+            .myIndicator3{
+                cursor: pointer;
+            }
+            .myIndicator4{
+                cursor: pointer;
+                display: unset;
+            }
+            .myIndicator5{
+                cursor: pointer;
+                display: unset;
+            }
+            .myIndicator6{
+                cursor: pointer;
+                display: unset;
+            }
+            .img{
+                left: 0%;
+                top: 10%;
+                font-weight: 700;
+                width: 100%;
+            }
+            .img0{
+                position: absolute;
+                height: 250px;
+                transition: 1s;
+            }
+            
+            .img2{
+                position: absolute;
+                transform: translateX(120%);
+                height: 250px;
+                transition: 1s;
+            }
+            
+            .img3{
+                position: absolute;
+                transform: translateX(240%);
+                height: 250px;
+                transition: 1s;
+            }
+            
+            .img4{
+                position: absolute;
+                transform: translateX(360%);
+                height: 250px;
+                transition: 1s;
+            }
+            
+            .img5{
+                position: absolute;
+                transform: translateX(500%);
+                height: 250px;
+                transition: 1s;
+            }
+            
+            .img6{
+                position: absolute;
+                transform: translateX(620%);
+                height: 250px;
+                transition: 1s;
+            }
+            
+            .img7{
+                position: absolute;
+                transform: translateX(750%);
+                height: 250px;
+                transition: 1s;
+            }
+        }
+    }
+}
