@@ -1,0 +1,25 @@
+#discover{
+    background-image: url("../../public/img/cta-bg.jpg");
+    background-attachment: fixed;
+    padding: 300px 0;
+    h2{
+        font-size: 60px;
+    }
+    button{
+        font-size: 20px;
+    }
+}
+
+@media screen and(max-width: 992px){
+    #discover{
+        background-image: url("../../public/img/cta-bg.jpg");
+        background-attachment: fixed;
+        padding: 100px 0;
+        h2{
+            font-size: 45px;
+        }
+        button{
+            font-size: 20px;
+        }
+    }
+}

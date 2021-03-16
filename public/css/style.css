@@ -16614,5 +16614,30 @@ header #navLogo #placeholder {
     margin-bottom: 20px;
   }
 }
+#discover {
+  background-image: url("../../public/img/cta-bg.jpg");
+  background-attachment: fixed;
+  padding: 300px 0;
+}
+#discover h2, #discover .h2 {
+  font-size: 60px;
+}
+#discover button {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 992px) {
+  #discover {
+    background-image: url("../../public/img/cta-bg.jpg");
+    background-attachment: fixed;
+    padding: 100px 0;
+  }
+  #discover h2, #discover .h2 {
+    font-size: 45px;
+  }
+  #discover button {
+    font-size: 20px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
