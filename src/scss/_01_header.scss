@@ -1,0 +1,51 @@
+header{
+    margin-top: 100px;
+    transition: 1s;
+    #navLogo{
+        transition: 1s;
+        h1{
+            font-size: 50px;
+            font-family: 'Poppins', serif;
+            font-weight: 700;
+        }
+        nav{
+            transition: 1s;
+            margin-top: 80px;
+            .darkMode{
+                height: 2vh;
+                width: 2vh;
+                background-color: black;
+                cursor: pointer;
+            }
+        }
+        #placeholder{
+            height:  20px;
+            width: 15%;
+        }
+    }
+}
+
+@media screen and (max-width: 1100px){
+    header{
+        margin-top: 100px;
+        transition: 1s;
+        #navLogo{
+            transition: 1s;
+            nav{
+                transition: 1s;
+                margin-top: 80px;
+                .darkMode{
+                    height: 2vh;
+                    width: 2vh;
+                    background-color: black;
+                    cursor: pointer;
+                }
+            }
+            #placeholder{
+                height:  20px;
+                width: 15%;
+                display: none;
+            }
+        }
+    }
+}
