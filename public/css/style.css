@@ -16543,10 +16543,76 @@ header #navLogo #placeholder {
     font-family: "Poppins", serif;
   }
 }
-.test {
-  height: 800px;
+#products {
+  margin-top: 100px;
+}
+#products .marginBottom {
+  margin-bottom: 120px;
+}
+#products span {
+  font-family: "Poppins", serif;
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+#products .beforeImg {
   width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+#products .beforeImg img {
+  margin-right: auto;
+  margin-left: auto;
+  width: 97%;
+  transition: 1s;
+  display: block;
+}
+#products .beforeImg img:hover {
+  transform: scale(1.1);
+}
+#products .beforeImg:hover {
+  width: 100%;
+}
+#products .beforeImg::before {
+  content: "View details";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: -70px;
+  width: 50%;
+  height: 70px;
   background-color: black;
+  color: white;
+  transition: 1s;
+  z-index: 1;
+}
+#products .beforeImg::after {
+  content: "Add to cart";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: -70px;
+  right: 0;
+  width: 50%;
+  height: 70px;
+  background-color: #D80316;
+  color: white;
+  transition: 1s;
+  z-index: 1;
+}
+#products .beforeImg:hover::after {
+  bottom: 0;
+}
+#products .beforeImg:hover::before {
+  bottom: 0;
+}
+
+@media screen and (max-width: 992px) {
+  #products span {
+    margin-bottom: 20px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
