@@ -15,7 +15,7 @@
 
     <header class="bg-white">
         <div id="navLogo" class="d-flex flex-column align-items-center bg-white">
-            <h1 class="text-dark">emporium.</h1>
+            <h1 class="text-dark empor">emporium.</h1>
             <nav class="navbar navbar-expand-lg bg-white navbar-light">
                 <div class="container-fluid">
                     <button class="navbar-toggler text-dark" type="button" data-bs-toggle="collapse"
@@ -36,7 +36,52 @@
                             <div id="darkMode1" class="darkMode me-1 bg-light border rounded"></div>
                             <div id="darkMode2" class="darkMode border border-light rounded"></div>
                         </div>
-                        <button id="connexion" class="py-1 border border-secondary bg-secondary text-light">Connexion</button>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="py-1 border border-secondary bg-secondary text-light"
+                            data-bs-toggle="modal" data-bs-target="#exampleModal">Connexion</button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header border-bottom border-white">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="w-100 d-flex justify-content-around">
+                                            <h2 class="cursorPointer mb-5 signUp">Sign Up</h2>
+                                            <h2 class="cursorPointer mb-5 register">Register</h2>
+                                        </div>
+                                        <div class="w-100 d-flex justify-content-between">
+                                            <div class="w-50 left d-flex flex-column">
+                                                <input style="height: 35px; width: 50%;" class="border border-light ms-3" type="email" name="email" id="email" placeholder="Email Adress">
+                                                <input style="height: 35px; width: 50%;" class="mt-2 border border-light ms-3" type="password" name="pw" id="pw" placeholder="Password">
+                                                <button type="button" class="ms-3 mt-2 py-1 border border-modalTurquoise bg-modalTurquoise rounded text-light w-50">Sign up </button>
+                                                <button type="button" class="ms-5 mt-5 py-1 border border-modalRed bg-modalRed rounded text-light ">Connect with Google</button>
+                                                <button type="button" class="ms-5 mt-2 py-1 border border-modalBlue bg-modalBlue rounded text-light ">Connect with Facebook</button>
+                                            </div>
+
+                                            <div class="right invisible d-flex flex-column">
+                                                <div class="d-flex">
+                                                    <input style="height: 35px; width: 50%;" class="border border-light ms-3" type="text" name="FirstName" id="firstName" placeholder="First name">
+                                                    <input style="height: 35px; width: 50%;" class=" border border-light ms-3" type="text" name="nom" id="nom" placeholder="Name">
+                                                </div>
+                                                <input style="height: 35px; width: 50%;" class="border border-light ms-3 mt-2" type="email" name="email" id="email" placeholder="Email Adress">
+                                                <div class="d-flex">
+                                                    <input style="height: 35px; width: 50%;" class=" border border-light ms-3 mt-2" type="password" name="pw" id="pw" placeholder="Confirm password">
+                                                    <input style="height: 35px; width: 50%;" class=" border border-light ms-3 mt-2" type="password" name="pw" id="pw" placeholder="Password">
+                                                </div>
+                                                <button type="button" class="ms-3 mt-3 py-1 border border-modalTurquoise bg-modalTurquoise rounded text-light w-50">Register</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Fin Modal -->
                     </div>
                 </div>
             </nav>
@@ -54,8 +99,10 @@
                 <div class="col-md-6 ps-5 pt-5">
                     <h2 class="text-warning mt-5">Shop at </h2>
                     <img src="./public/img/logo.png" alt="logoEmporium" class="w-100">
-                    <p class="text-secondary mt-3">A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring whihch I enjoy with my.</p>
-                    <button id="connexion" class="mt-3 py-3 px-5 border bg-warning text-light rounded-pill">Sale Items</button>
+                    <p class="text-secondary mt-3">A wonderful serenity has taken possession of my entire soul, like
+                        these sweet mornings of spring whihch I enjoy with my.</p>
+                    <button id="connexion" class="mt-3 py-3 px-5 border bg-warning text-light rounded-pill">Sale
+                        Items</button>
                 </div>
                 <div class="col-md-6">
                     <img src="./public/img/slider-1.jpg" alt="t-shirt">
@@ -71,19 +118,22 @@
         <div class="container-fluid">
             <div class="row text-light mb-5">
                 <div class="col-md-4 d-flex justify-content-center align-items-center">
-                    <div class="containerImg flex-column containerImg1 d-flex justify-content-center align-items-center">
+                    <div
+                        class="containerImg flex-column containerImg1 d-flex justify-content-center align-items-center">
                         <h2>Living Room</h2>
                         <div class="underlineService"></div>
                     </div>
                 </div>
                 <div class="col-md-4 d-flex justify-content-center align-items-center">
-                    <div class="containerImg flex-column containerImg2 d-flex justify-content-center align-items-center">
+                    <div
+                        class="containerImg flex-column containerImg2 d-flex justify-content-center align-items-center">
                         <h2>Sale Items</h2>
                         <div class="underlineService"></div>
                     </div>
                 </div>
                 <div class="col-md-4 d-flex justify-content-center align-items-center">
-                    <div class="containerImg flex-column containerImg3 d-flex justify-content-center align-items-center">
+                    <div
+                        class="containerImg flex-column containerImg3 d-flex justify-content-center align-items-center">
                         <h2>Clothes</h2>
                         <div class="underlineService"></div>
                     </div>
@@ -115,13 +165,14 @@
                         <img src="./public/img/products_mini/product-gloves.jpg" alt="gloves">
                     </div>
                     <div class="d-flex align-items-center justify-content-center">
-                        <div style="height: 70px; width: 70px;" class="bg-warning d-flex align-items-center justify-content-center rounded-pill me-4 mt-4">
+                        <div style="height: 70px; width: 70px;"
+                            class="bg-warning d-flex align-items-center justify-content-center rounded-pill me-4 mt-4">
                             <p class="sale bg-warning text-light p-0 m-0">Sale!</p>
                         </div>
                         <div class="d-flex flex-column justify-content-center align-items-center">
                             <span class="text-dark mt-4">Leather Gloves</span>
                             <span>
-                                <span  class="text-secondary text-decoration-line-through">$34.00</span>
+                                <span class="text-secondary text-decoration-line-through">$34.00</span>
                                 <span class="text-warning">$27.00</span>
                             </span>
                         </div>
@@ -146,13 +197,14 @@
                         <img src="./public/img/products_mini/product-bag.jpg" alt="sac">
                     </div>
                     <div class="d-flex align-items-center justify-content-center">
-                        <div style="height: 70px; width: 70px;" class="bg-warning d-flex align-items-center justify-content-center rounded-pill me-4 mt-4">
+                        <div style="height: 70px; width: 70px;"
+                            class="bg-warning d-flex align-items-center justify-content-center rounded-pill me-4 mt-4">
                             <p class="sale bg-warning text-light p-0 m-0">Sale!</p>
                         </div>
                         <div class="d-flex flex-column justify-content-center align-items-center">
                             <span class="text-dark mt-4">Leather Gloves</span>
                             <span>
-                                <span  class="text-secondary text-decoration-line-through">$420.00</span>
+                                <span class="text-secondary text-decoration-line-through">$420.00</span>
                                 <span class="text-warning">$350.00</span>
                             </span>
                         </div>
@@ -217,7 +269,8 @@
 
     <section id="discover">
         <h2 class="text-light text-center">Discover Thousands Of Greats Products</h2>
-        <button class="mx-auto d-block rounded mt-5 py-1 border border-warning bg-warning text-light">Learn more</button>
+        <button class="mx-auto d-block rounded mt-5 py-1 border border-warning bg-warning text-light">Learn
+            more</button>
     </section>
 
     <!-- Fin section discover -->
@@ -227,7 +280,7 @@
     <section id="hotFashion">
         <h2 class="text-center text-dark">Hot Fashion Products</h2>
         <div class="myCarousel">
-            
+
             <div class="img img0">
                 <div class="beforeImg">
                     <img src="./public/img/products_mini/product-luxry-sofa.jpg" alt="sofa" class="w-100">
@@ -237,25 +290,26 @@
                     <span class="text-warning ">$600.00</span>
                 </div>
             </div>
-    
+
             <div class="img img2">
                 <div class="beforeImg">
                     <img src="./public/img/products_mini/product-gloves.jpg" alt="gloves" class="w-100">
                 </div>
                 <div class="d-flex align-items-center justify-content-center">
-                    <div style="height: 70px; width: 70px;" class="bg-warning d-flex align-items-center justify-content-center rounded-pill me-4 mt-4">
+                    <div style="height: 70px; width: 70px;"
+                        class="bg-warning d-flex align-items-center justify-content-center rounded-pill me-4 mt-4">
                         <p class="sale bg-warning text-light p-0 m-0">Sale!</p>
                     </div>
                     <div class="d-flex flex-column justify-content-center align-items-center">
                         <span class="text-dark mt-4">Leather Gloves</span>
                         <span>
-                            <span  class="text-secondary text-decoration-line-through">$34.00</span>
+                            <span class="text-secondary text-decoration-line-through">$34.00</span>
                             <span class="text-warning">$27.00</span>
                         </span>
                     </div>
                 </div>
             </div>
-    
+
             <div class="img img3">
                 <div class="beforeImg">
                     <img src="./public/img/products_mini/product-cups.jpg" alt="bowl" class="w-100">
@@ -265,25 +319,26 @@
                     <span class="text-warning ">$18.00</span>
                 </div>
             </div>
-    
+
             <div class="img img4">
                 <div class="beforeImg">
                     <img src="./public/img/products_mini/product-bag.jpg" alt="sac" class="w-100">
                 </div>
                 <div class="d-flex align-items-center justify-content-center">
-                    <div style="height: 70px; width: 70px;" class="bg-warning d-flex align-items-center justify-content-center rounded-pill me-4 mt-4">
+                    <div style="height: 70px; width: 70px;"
+                        class="bg-warning d-flex align-items-center justify-content-center rounded-pill me-4 mt-4">
                         <p class="sale bg-warning text-light p-0 m-0">Sale!</p>
                     </div>
                     <div class="d-flex flex-column justify-content-center align-items-center">
                         <span class="text-dark mt-4">Leather Gloves</span>
                         <span>
-                            <span  class="text-secondary text-decoration-line-through">$420.00</span>
+                            <span class="text-secondary text-decoration-line-through">$420.00</span>
                             <span class="text-warning">$350.00</span>
                         </span>
                     </div>
                 </div>
             </div>
-    
+
             <div class="img img5">
                 <div class="beforeImg">
                     <img src="./public/img/products_mini/product-tshitr.jpg" alt="shirt" class="w-100">
@@ -293,7 +348,7 @@
                     <span class="text-warning ">$15.00</span>
                 </div>
             </div>
-    
+
             <div class="img img6">
                 <div class="beforeImg">
                     <img src="./public/img/products_mini/product-plates.jpg" alt="plates" class="w-100">
@@ -303,7 +358,7 @@
                     <span class="text-warning ">$30.00</span>
                 </div>
             </div>
-    
+
             <div class="img img7">
                 <div class="beforeImg">
                     <img src="./public/img/products_mini/product-shoes.jpg" alt="Shoes" class="w-100">
@@ -313,7 +368,7 @@
                     <span class="text-warning ">$60.00</span>
                 </div>
             </div>
-    
+
             <div class="divIndicators">
                 <span class="bg-light myIndicator indic"></span>
                 <span class="bg-light myIndicator1 indic"></span>
@@ -333,28 +388,39 @@
     <section id="trustUs" class="mb-5">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-12 col-lg-4">
                     <div class="containerTrust d-flex flex-column align-items-center bg-light">
                         <i class="far fa-check-circle"></i>
                         <p class="fw-bold mb-5">Trusted by 10,000+ customers</p>
-                        <p class="w-75 text-center text-secondary">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit iure ipsum inventore voluptas ea perspiciatis, cumque atque vitae sed, maiores.</p>
-                        <button id="connexion" class="mt-4 mb-5 px-3 py-2 rounded border border-myDark bg-myDark text-light">Learn more</button>
+                        <p class="w-75 text-center text-secondary">Lorem, ipsum dolor sit amet consectetur adipisicing
+                            elit. Fugit iure ipsum inventore voluptas ea perspiciatis, cumque atque vitae sed, maiores.
+                        </p>
+                        <button id="connexion"
+                            class="mt-4 mb-5 px-3 py-2 rounded border border-myDark bg-myDark text-light">Learn
+                            more</button>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-12 col-lg-4">
                     <div class="containerTrust d-flex flex-column align-items-center bg-warning text-light">
                         <i class="fas fa-paper-plane"></i>
                         <p class="fw-bold mb-5">Very fast shipping</p>
-                        <p class="w-75 text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit iure ipsum inventore voluptas ea perspiciatis, cumque atque vitae sed, maiores.</p>
-                        <button id="connexion" class="mt-4 mb-5 px-3 py-2 rounded border border-warning bg-light text-myDark">Learn more</button>
+                        <p class="w-75 text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit iure
+                            ipsum inventore voluptas ea perspiciatis, cumque atque vitae sed, maiores.</p>
+                        <button id="connexion"
+                            class="mt-4 mb-5 px-3 py-2 rounded border border-warning bg-light text-myDark">Learn
+                            more</button>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-12 col-lg-4">
                     <div class="containerTrust d-flex flex-column align-items-center bg-light">
                         <i class="far fa-check-circle"></i>
                         <p class="fw-bold mb-5">Trusted by 10,000+ customers</p>
-                        <p class="w-75 text-center text-secondary">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit iure ipsum inventore voluptas ea perspiciatis, cumque atque vitae sed, maiores.</p>
-                        <button id="connexion" class="mt-4 mb-5 px-3 py-2 rounded border border-myDark bg-myDark text-light">Learn more</button>
+                        <p class="w-75 text-center text-secondary">Lorem, ipsum dolor sit amet consectetur adipisicing
+                            elit. Fugit iure ipsum inventore voluptas ea perspiciatis, cumque atque vitae sed, maiores.
+                        </p>
+                        <button id="connexion"
+                            class="mt-4 mb-5 px-3 py-2 rounded border border-myDark bg-myDark text-light">Learn
+                            more</button>
                     </div>
                 </div>
             </div>
@@ -371,7 +437,10 @@
                 <div class="row">
                     <div class="col-lg-4">
                         <h5 class="text-light fw-light">About Us</h5>
-                        <p class="text-secondary mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus nulla, vel, et pariatur optio repellat necessitatibus adipisci maxime laboriosam unde, voluptatum vitae. Iusto qui voluptas, commodi doloremque sequi quae alias, expedita repellat nam nesciunt ipsum?</p>
+                        <p class="text-secondary mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Temporibus nulla, vel, et pariatur optio repellat necessitatibus adipisci maxime laboriosam
+                            unde, voluptatum vitae. Iusto qui voluptas, commodi doloremque sequi quae alias, expedita
+                            repellat nam nesciunt ipsum?</p>
                     </div>
                     <div class="col-lg-4">
                         <h5 class="text-light fw-light">Recents Posts</h5>
@@ -386,25 +455,28 @@
                         <h5 class="text-light fw-light mb-4 mtTag">Tag Cloud</h5>
                         <div class="d-flex nowrap">
                             <span class="py-1 border border-secondary text-secondary rounded fs-5 me-2">business</span>
-                            <span class="py-1 border border-secondary text-secondary rounded fs-5 me-2">confidence</span>
+                            <span
+                                class="py-1 border border-secondary text-secondary rounded fs-5 me-2">confidence</span>
                             <span class="py-1 border border-secondary text-secondary rounded fs-5 me-2">gadgets</span>
                         </div>
                         <div class="d-flex mt-2 nowrap">
                             <span class="py-1 border border-secondary text-secondary rounded fs-5 me-2">identity</span>
                             <span class="py-1 border border-secondary text-secondary rounded fs-5 me-2">logo</span>
-                            <span class="py-1 border border-secondary text-secondary rounded fs-5 me-2">photography</span>
+                            <span
+                                class="py-1 border border-secondary text-secondary rounded fs-5 me-2">photography</span>
                         </div>
                         <div class="d-flex my-2 nowrap">
                             <span class="py-1 border border-secondary text-secondary rounded fs-5 me-2">time</span>
                             <span class="py-1 border border-secondary text-secondary rounded fs-5 me-2">trips</span>
                             <span class="py-1 border border-secondary text-secondary rounded fs-5 me-2">works</span>
                         </div>
-                        <span class="mt-2 py-1 border border-secondary text-secondary rounded fs-5 me-2">work space</span>
+                        <span class="mt-2 py-1 border border-secondary text-secondary rounded fs-5 me-2">work
+                            space</span>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="bg-dark">
+        <div class="bg-myDark2">
             <p class="text-secondary m-0 text-center py-4 fs-4">Copyright 2020 goodlayers, all right reserved</p>
         </div>
     </footer>
