@@ -51,6 +51,32 @@ header{
     }
 }
 
+
+@media screen and (max-width: 925px){
+    header{
+        margin-top: 100px;
+        transition: 1s;
+        #navLogo{
+            transition: 1s;
+            nav{
+                transition: 1s;
+                margin-top: 80px;
+                .darkMode{
+                    height: 2vh;
+                    width: 2vh;
+                    background-color: black;
+                    cursor: pointer;
+                }
+            }
+            #placeholder{
+                height:  20px;
+                width: 15%;
+                display: none;
+            }
+        }
+    }
+}
+
 .cursorPointer{
     cursor: pointer;
 }
